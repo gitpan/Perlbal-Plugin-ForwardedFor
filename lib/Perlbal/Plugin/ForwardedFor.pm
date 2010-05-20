@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Perlbal;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $target_header;
 
@@ -66,15 +66,15 @@ Perlbal::Plugin::ForwardedFor - Rename the X-Forwarded-For header in Perlbal
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 SYNOPSIS
 
 This plugin changes the header Perlbal will use to delcare itself as a proxy.
 
-Usually Perlbal will add itself to X-Forwarded-For, but this plugins allows you
-to change that to any header you want, so you coudl differ Perlbal from other
-possible proxies the user might have.
+Usually Perlbal will - perl RFC - add itself to X-Forwarded-For, but this
+plugins allows you to change that to any header you want, so you could differ
+Perlbal from other possible proxies the user might have.
 
 In your Perlbal configuration:
 
